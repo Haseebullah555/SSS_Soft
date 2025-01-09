@@ -1,7 +1,8 @@
 /********** Template CSS **********/
 :root {
-  --primary: #de2b76;
-  --secondary: #cabcc7;
+  --main-Color: #dc3545;
+  --primary: #dc3545;
+  --secondary: #910513;
   --light: #f7faff;
   --dark: #1d1d27;
 }
@@ -185,7 +186,9 @@ h6,
     left 45% bottom -1px, center bottom -1px;
   background-repeat: no-repeat;
 }
-
+#title-logo{
+    font-size: 5rem;
+}
 /*** Section Title ***/
 .section-title::before {
   position: absolute;
@@ -225,7 +228,7 @@ h6,
   height: 10px;
   top: 2px;
   left: 0;
-  background: #de2b76;
+  background: var(--main-Color);
 }
 
 .section-title h6::after {
@@ -255,7 +258,7 @@ h6,
   align-items: center;
   justify-content: center;
   color: var(--light);
-  background: url(../img/icon-shape-primary.png) center center no-repeat;
+  background: url(../img/icon-shape-danger.jpg) center center no-repeat;
   transition: 0.5s;
 }
 
@@ -356,7 +359,7 @@ h6,
 }
 
 .team-item:hover::after {
-  background: var(--primary);
+  background: var(--main-Color);
 }
 
 .team-item h5,
